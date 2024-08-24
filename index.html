@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/favicon.svg" type="image/svg+xml">
+    <title>Anahí Peralta</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script src="https://kit.fontawesome.com/c72ef81d5f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c72ef81d5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Anahi Peralta</h1>
+            <p>Estudiante de <span>Análisis de Sistemas</span> y <span>Diseñadora gráfica</span> Freelance.</p>
+        </div>
+    </header>
+    <main>
+        <nav class="navbar">
+            <ul class="main-items">
+                <li><i class="fa-solid fa-user"></i><a href="#Resume">Sobre Mi</a></li>
+                <li><i class="fa-solid fa-heart"></i><a href="#Pasatiempos">Intereses</a></li>
+                <li><i class="fa-solid fa-message"></i><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="sections">
+            <div class="contain-flex-section">
+                <section class="contain resume" id="Resume">
+                        <div class="title">
+                            <h2 class="section-title">Resumen</h2>
+                        </div>
+                        <div class="container">
+                            <div class="experience">
+                                <p>Tengo experiencia en desarrollo web y diseño gráfico. 
+                                       Me enfoco en encontrar soluciones creativas y eficaces, y 
+                                       me mantengo al tanto de las últimas herramientas y tecnologías.
+                                </p>
+                            </div>
+                        </div>
+                </section>
+                <section class="contain about" id="Pasatiempos">
+                    <div class="title">
+                        <h2 class="section-title">Pasatiempos</h2>
+                    </div>
+                    <div class="container">
+                        <p>El dibujo y la música son parte fundamental de mi vida. </p>
+                            <p>Me gusta salir a caminar disfruto ver series de ciencia 
+                            ficción</p>
+                    </div>
+                </section>
+                <section class="contain img">
+                    <img src="/src/img/foto.png" alt="">
+                </section>
+            </div>
+            <div class="contain-flex-section">
+                <section class="contain contact" id="Contacto">
+                    <div class="title">
+                        <h2 class="section-title">Contacto</h2>
+                    </div>
+                    <form id="form" class="contact-form" action="https://formspree.io/f/xwkgydbe" method="post">
+                        <div class="field-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="contact-nombre" name="nombre" required>
+                        </div>
+                        <div class="field-group flex">
+                            <div class="field">
+                                <label for="email">Correo *</label>
+                                <input type="email" id="contact-correo" name="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Teléfono (Opcional)</label>
+                                <input type="number" name="phone" id="">    
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="contact-mensaje" name="message" rows="7" required></textarea>
+                        </div>
+                        <input class="btn" id="contact-btn" type="submit" value="Enviar">
+                    </form>
+                </section>
+                <section class="container-img">
+                    <div class="contain images">
+                        <img src="/src/img/portada-1.jpg" alt="" width="280px" height="320px">
+                    </div>
+                    <div class="contain images">
+                        <img src="/src/img/portada-2.jpg" alt="" width="280px">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="content-one">
+                <div class="img-logo-footer">
+                    <img src="src/img/logo-secundario.svg" alt="">
+                </div>
+                <div class="links">
+                    <a href="https://github.com/AnahiPeralta" target="_blank"><i class="fa-brands fa-github" style="font-size: 22px; margin-right: 5px;"></i></a>
+                    <a href="https://www.linkedin.com/in/anahi-peralta/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 22px;"></i></a>
+                </div>
+            </div>
+            <div class="content-two">
+                <div class="copy">
+                    <p class="copyright">© 2024 Anahí Peralta. Todos los derechos reservados.</p>
+                    <p>Desarrollado con mucho café ☕</p>
+                </div>
+                <div class="update">
+                    <p class="email"><a href="mailto:anahiperalta2727@gmail.com">anahiperalta2727@gmail.com</a></p>
+                    <p>Última actualización 23 de Agosto, 21:32 PM </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

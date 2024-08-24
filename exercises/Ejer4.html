@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/favicon.svg" type="image/svg+xml">
+    <title>Anahí Peralta</title>
+</head>
+<body>
+    <main>
+        <section class="contain contact" id="Contacto">
+            <div class="title">
+                <h2 class="section-title">Contacto</h2>
+            </div>
+            <form id="form" class="contact-form" action="https://formspree.io/f/xwkgydbe" method="post">
+                <div class="field-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="contact-nombre" name="nombre" required>
+                </div>
+                <div class="field-group flex">
+                    <div class="field">
+                        <label for="email">Correo *</label>
+                        <input type="email" id="contact-correo" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Teléfono (Opcional)</label>
+                        <input type="number" name="phone" id="">    
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label for="message">Mensaje *</label>
+                    <textarea id="contact-mensaje" name="message" rows="7" required></textarea>
+                </div>
+                <input class="btn" id="contact-btn" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

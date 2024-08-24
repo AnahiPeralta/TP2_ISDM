@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --marfil: #E4E4E4;
+    --pink: #FF3660;
+    --light-pink: #ff6284;
+    --gray: #9F9F9F;
+    --hoverBg: radial-gradient(circle at 0% 0%, #FF5E82, #2B2B2B);
+    --Bg: radial-gradient(circle, #5f5f5f, #323232);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: var(--marfil);
+    font-weight: 200;
+    background: radial-gradient(circle, #303030, #171717);
+}
+
+ul > li ,
+.links-project > li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--marfil);
+}
+
+li i {
+    color: #fc5075;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.main-items li i a{
+    transition: 0.2s;
+}
+
+.main-items li a:hover {
+    color: #fc5075;
+    transition: 0.2s;
+}
+
+/*Barra dezplazadora*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: rgb(14, 14, 14);
+    z-index: 1000;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(82, 82, 82); 
+    border-radius: 8px; 
+    width: 8px;
+    height: 8px;
+  }
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/*Header*/
+
+.header {
+    padding: 35px 0;
+    text-align: center;
+    background: #303030;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 35px;
+}
+
+.header p {
+    margin-top: 3px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p span {
+    color: var(--light-pink)
+}
+
+/*Main*/
+
+.sections {
+    padding: 153px 50px 0 250px;
+}
+.navbar {
+    background: #353535;
+    position: fixed;
+    margin-top: 150px;
+    width: 180px;
+    height: 79%;
+    z-index: 1;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.navbar .main-items {
+    padding: 45px 25px;
+}
+
+.navbar .main-items li {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.contain {
+    background: #353535;
+    margin-bottom: 20px;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.contain-flex-section {
+    display: flex;
+    gap: 20px;
+}
+
+/*Section*/
+.title h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contain .container {
+    background-color: #4b4b4b;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.contain.resume {
+    width: 600px;
+}
+
+.contain.img {
+    padding: 20px;
+}
+
+.contain.img img {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 150px;
+    height: 100%;
+}
+
+
+/*Contacto*/
+
+.contain.contact {
+    width: 100%;
+}
+
+.container-contact-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.container-info-contact {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.contact-form .field-group,
+.contact-form .field {
+    display: grid;
+}
+
+.contact-form .field-group.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form .field-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .field-group label {
+    color: rgb(160, 160, 160);
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-form .field-group input,
+.contact-form .field-group textarea, 
+.contact-form input.btn{
+    background: linear-gradient(to bottom, #35353583, #25252521);
+    border: 2px solid #7c7c7c54;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: rgb(216, 216, 216);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form input.btn {
+    background: #555555;
+    border: 1px solid #7c7c7c00;
+    color: rgb(231, 231, 231);
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-form input.btn:hover {
+    border: 1px solid #7c7c7c;
+    transform: scale(1.02);
+    transition: 0.2s;
+    background:radial-gradient(circle at 0% 0%, #FF5E82, #2B2B2B);
+}
+
+.contain.images img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.contain.images {
+    padding: 20px;
+}
+
+/*Footer*/
+
+footer {
+    padding: 1.8rem 50px 1.8rem 50px;
+    margin-left: 250px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #303030;
+    z-index: 100;
+}
+
+.img-logo-footer img {
+    height: 40px;
+}
+
+.content-one, .content-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-one {
+    margin-bottom: 15px;
+}
+
+.copy, .update  {
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--gray);
+}
+
+.copy .copyright, 
+.update .email {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--marfil);
+}
+
+.content-two .update {
+    text-align: right;
+}
